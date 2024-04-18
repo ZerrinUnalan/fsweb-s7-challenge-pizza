@@ -118,12 +118,6 @@ function OrderPizza(props) {
   }, [errors]);
 
   const onClick = (e) => {
-    /*
-    if (!isValid) {
-      e.preventDefault();
-      return;
-    }
-   */
     axios
       .post("https://reqres.in/api/pizza", siparisData)
       .then((response) => {
