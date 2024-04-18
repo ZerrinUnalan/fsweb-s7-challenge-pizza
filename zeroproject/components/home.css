@@ -51,7 +51,7 @@
   display: inline-block;
 }
 
-/*İterasyon-2 başlangıç*/
+/*İterasyon-2 başlangıç burası*/
 /*main*/
 
 .home-main {
@@ -159,7 +159,6 @@
   gap: 20px;
 }
 
-/*.home-main section:nth-child(2) p:nth-child(1)*/
 .paket-menü {
   font-family: "Satisfy", cursive;
   font-size: 2rem;

@@ -1,18 +1,18 @@
 beforeEach(() => {
   cy.visit("http://localhost:5173/");
 
-  cy.contains("ACIKTIM").click(); // Ana sayfadaki butona tıkla
+  cy.contains("ACIKTIM").click();
 });
 
 it("FORMU DOLDUR VE GÖNDER", () => {
-  // Rastgele boyut seç
+  // kafana göre boyut
   cy.get("#sizeTEST input[type=radio]")
     .should("be.visible")
     .then(($radios) => {
       const radios = $radios.toArray();
       const randomRadio = Cypress._.sample(radios);
       cy.wrap(randomRadio).check();
-    }); // Rastgele hamur seç
+    }); // kafana göre hamur
   cy.get('[data-cy="pastry"]')
     .should("be.visible")
     .then(($select) => {
@@ -21,7 +21,7 @@ it("FORMU DOLDUR VE GÖNDER", () => {
       const value = randomOption.value;
       cy.get('[data-cy="pastry"]').select(value);
     });
-  // Rastgele 6 adet ek malzeme seç
+  // kafana göre 6 adet fazladan malzeme
 
   cy.get("#checkboxes input[type=checkbox]")
     .should("be.visible")
@@ -32,13 +32,13 @@ it("FORMU DOLDUR VE GÖNDER", () => {
     .should("have.length", 5)
     .click({ multiple: true });
   cy.get("#checkboxes input[type=checkbox]:checked").should("have.length", 5);
-  // Adı doldur
+  // İsim yaz
   cy.get('[data-cy="name"]').type("Zerrin Ünalan");
-  // Notu doldur
+  // Not yaz
   cy.get('[data-cy="note"]').type("Karım hamile hızlı getirebilir misiniz?");
 
-  // Sipariş ver butonuna tıkla
+  // sipariş ver butonuna tıkıtık
   cy.get('[data-cy="order-button"]').click();
-  // Formun submit edildiğini doğrula
+  // Form submit edildiğinde doğrula
   cy.url().should("include", "/success");
 });

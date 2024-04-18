@@ -3,19 +3,6 @@ import "./ordersuccess.css";
 function OrderSuccess(props) {
   const { siparisData } = props;
 
-  /*
-  const history = useHistory();
-  
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      history.push("/");
-    }, 3000);
-
-    return () => clearTimeout(timeout);
-  }, [history]);
-  */
-
   return (
     <>
       <div className="success">
