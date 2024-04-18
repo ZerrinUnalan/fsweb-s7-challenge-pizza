@@ -340,22 +340,5 @@ function OrderPizza(props) {
     </>
   );
 }
-/*
 
- <section>
-          <div className="article-alt">
-            
-          
-          
-        </section>
-
-
-
-
-
-<div className="link-pizza"> 
-<Link to={isValid ? "/OrderSuccess" : ""} onClick={onClick}>
-                    SİPARİŞ VER
-                  </Link>
-*/
 export default OrderPizza;
