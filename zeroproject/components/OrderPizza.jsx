@@ -25,8 +25,8 @@ const malzemeler = [
 const errorMessage = {
   boyut: "Lütfen pizza boyutunu seçiniz.",
   hamur: "Lütfen hamur kalınlığını seçiniz.",
-  malzeme: "En az 4 malzeme seçmelisiniz.",
-  isim: "En az 3 karakterli isim girmeliniz.",
+  malzeme: "En az 4 malzeme seçiniz.",
+  isim: "En az 3 karakterli bir ad soyad giriniz.",
 };
 const siparisForm = {
   isim: "",
@@ -233,7 +233,6 @@ function OrderPizza(props) {
                   name="hamur"
                   type="select"
                   onChange={onChange}
-                  /* value={siparisData.hamur}*/
                 >
                   <option style={{ color: "rgba(0, 0, 0, 0.5)" }}>
                     -- Hamur Kalınlığı Seç--
@@ -316,7 +315,7 @@ function OrderPizza(props) {
                   <div className="secimler">
                     <p>Seçimler</p>{" "}
                     <p>
-                      {siparisData.malzemeler.length * 5 * siparisData.adet}₺
+                      {siparisData.malzemeler.length * 5 * siparisData.adet}
                     </p>
                   </div>
                   <div className="toplam">

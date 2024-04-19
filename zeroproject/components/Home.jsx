@@ -82,7 +82,7 @@ function Home() {
                   <div className="cok-hızlı">
                     <h3>
                       {" "}
-                      <span>Çooooook</span> hızlı npm gibi kurye{" "}
+                      <span>Çooooook</span> Hızlı Npm Gibi Kurye{" "}
                     </h3>
                     <a href="/">SİPARİŞ VER</a>
                   </div>
@@ -91,7 +91,7 @@ function Home() {
             </section>
             <section>
               <div>
-                <p className="paket-menü">En Çok paketlenen Menüler</p>
+                <p className="paket-menü">En Çok Paketlenen Menüler</p>
                 <h1>Acıktıran Kodlara Doyuran Lezzetler</h1>
               </div>
               <nav className="nav-section">
@@ -152,7 +152,7 @@ function Home() {
                     <div className="section-rakamlar">
                       <p>4.9</p>
                       <p>(200)</p>
-                      <p>60₺</p>{" "}
+                      <p>260₺</p>{" "}
                     </div>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ function Home() {
                     <div className="section-rakamlar">
                       <p>4.9</p>
                       <p>(928)</p>
-                      <p>85₺</p>
+                      <p>285₺</p>
                     </div>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ function Home() {
                     <div className="section-rakamlar">
                       <p>4.9</p>
                       <p>(462)</p>
-                      <p>75₺</p>
+                      <p>275₺</p>
                     </div>
                   </div>
                 </div>
@@ -197,6 +197,3 @@ function Home() {
 }
 
 export default Home;
-
-/*
- */
