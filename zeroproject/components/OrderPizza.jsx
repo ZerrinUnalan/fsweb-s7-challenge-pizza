@@ -26,7 +26,6 @@ const errorMessage = {
   boyut: "Lütfen pizza boyutunu seçiniz.",
   hamur: "Lütfen hamur kalınlığını seçiniz.",
   malzeme: "En az 4 malzeme seçiniz.",
-  isim: "En az 3 karakterli bir ad soyad giriniz.",
 };
 const siparisForm = {
   isim: "",
